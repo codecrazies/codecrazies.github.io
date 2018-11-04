@@ -1,0 +1,50 @@
+  @font-face {
+     font-family: zilla;
+     src: url(https://developer.mozilla.org/static/fonts/locales/ZillaSlab-Bold.subset.e96c15f68c68.woff2) 
+}
+ body {
+     background-color: #ffffff;
+     font-family: "Karla", sans-serif;
+     font-size: 20px;
+}
+ .header {
+     font-family: zilla;
+     width: inherit;
+     background-color: #00aeef;
+     height: 60px;
+     color: white;
+     align-content: stretch;
+     padding: 10px;
+}
+.cctext {
+  font-family: "Zilla";
+}
+img {
+  vertical-align: middle;
+  margin-left: 45%;
+  margin-bottom: 20%;
+}
+ pre {
+     background: #ebebeb;
+     color: black;
+     border-radius: 1px;
+     border-top: 6px solid #00aeef;
+}
+ pre span {
+     display: block;
+     line-height: 1.5rem;
+     counter-increment: line;
+}
+ pre span:before {
+     content: counter(line);
+     display: inline-block;
+     border-right: 1px solid #ddd;
+     padding: 0 .5em;
+     margin-right: .5em;
+     color: #888 
+}
+ .view {
+     background-color: white;
+     border: 2px solid #00aeef;
+     padding: 20px;
+}
