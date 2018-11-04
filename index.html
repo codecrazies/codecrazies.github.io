@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My JavaScript Project</title>
+    <script src="main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="themes/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+  <h3 class="w3-bar-item">Documentation</h3>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+    <div style="margin-left:25%;padding:15px;">
+<div class="header"><img src="https://png.icons8.com/color/1600/cute-hamster.png" width="75" align="center"/></div>
+    <br>
+    <pre>
+    <script>
+      // Line 1
+      hotdog.line(
+        token_key("var ") +
+        hotdog.str("name ") +
+        token_punc("= ") +
+        token_char("\"Jack\"") +
+        token_punc(";") +
+        token_com(" // The string 'name'") +
+        hotdog.str("<br>")
+      )
+      // Line 2
+      hotdog.line("<br>")
+      // Line 3
+      hotdog.line(
+        token_key("function ") +
+        hotdog.str("sayName") +
+        token_punc("() {") +
+        hotdog.str("<br>")
+      )
+      // Line 4
+      hotdog.line(
+        hotdog.str("&emsp;&emsp;console") +
+        token_punc(".") +
+        token_classn("log") +
+        token_punc("(") +
+        hotdog.str("name") +
+        token_punc(");")
+      )
+      hotdog.line(token_punc("};"))
+      // Line 5
+      hotdog.line("<br>")
+      // Line 6
+      hotdog.line(
+        hotdog.str("sayName") +
+        token_punc("();")
+      )
+      // Line 7
+      hotdog.line(
+        token_com(" // => Jack")
+      )
+    </script>
+    </pre>
+    <h2 class="cctext">Fast and easy coding with Hotdog.</h2>
+    Learn it, it is a great way to code websites with Javascript, and it comes with the syntax highlighter module reviewed here!
+    <br><br>
+    <pre>
+        <script>
+          hotdog.line(
+            hotdog.str("hotdog") +
+            token_punc(".") +
+            token_classn("line") +
+            token_punc("(") +
+            token_char("\"Hello World!\"") +
+            token_punc(");") +
+            token_com(" // With syntax highlighting")
+          )
+          hotdog.line(
+            hotdog.str("hotdog.line(\"Hello World!\"); // Without syntax highlighting")
+          )
+        </script>
+      </pre>
+    Want to see the output of that code?  Check this:<br><br>
+    <div class="view">
+      Hello World!
+    </div>
+</div>
+  </body>
+</html> 
