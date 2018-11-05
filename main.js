@@ -1,46 +1,61 @@
-var hotdog = {}
+var hotdog = {};
 
-hotdog.line = function(str) {
-  document.write("<span>" + str + "</span>")
+// Write function
+hotdog.write = function(str,color) {
+  if(color) {
+    document.write("<font color=\"" + color + "\">" + str + "</font>")
+  } else {
+    document.write(str)
+  }
 }
 
+// Wrap function
+hotdog.wrap = function(inner) {
+  document.write("<span>" + inner + "</span>")
+}
+
+// Str function
 hotdog.str = function(str,color) {
-  if (color) {
+  if(color) {
     return "<font color=\"" + color + "\">" + str + "</font>"
   } else {
     return str
   }
 }
 
-// Syntax Highlighter
-function token_char(str) {
-  return hotdog.str(str,"#690")
+// Spawn function
+hotdog.spawn = function(tag,attr,parent) {
+  var t = document.createElement(tag)
+  
+  Object.keys(attr).forEach(function(at) {
+    t.setAttribute(at,attr[at])
+  });
+  parent.appendChild(t)
 }
 
-function token_com(str) {
+// Syntax Highlighter
+hotdog.sh = {}
+hotdog.sh.comment = function(str) {
   return hotdog.str(str,"slategray")
 }
-
-function token_punc(str) {
+hotdog.sh.char = function(str) {
+  return hotdog.str(str,"#690")
+}
+hotdog.sh.puncuation = function(str) {
   return hotdog.str(str,"#999")
 }
-
-function token_bool(str) {
+hotdog.sh.bool = function(str) {
   return hotdog.str(str,"#905")
 }
-
-function token_oper(str) {
+hotdog.sh.operator = function(str) {
   return hotdog.str(str,"#9a6e3a")
 }
-
-function token_key(str) {
+hotdog.sh.keyword = function(str) {
   return hotdog.str(str,"#07a")
 }
-
-function token_classn(str) {
+hotdog.sh.classname = function(str) {
   return hotdog.str(str,"#DD4A68")
 }
-
-function token_var(str) {
+hotdog.sh.variable = function(str) {
   return hotdog.str(str,"#e90")
 }
