@@ -20,8 +20,8 @@
       <div class="cctext"><font size="+3">Welcome to CodeCrazies.</font></div>
       <pre>
       <script>
-        hotdog.line(
-          token_com("// What we do at CodeCrazies.") +
+        hotdog.wrap(
+          hotdog.sh.comment("// What we do at CodeCrazies.") +
           hotdog.str("<br>")
         )
         hotdog.line("")
